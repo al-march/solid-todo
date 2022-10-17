@@ -1,8 +1,13 @@
-import {Button} from '@solsy/ui';
+import {AppRouters} from 'routers';
 import type {Component} from 'solid-js';
 
 const App: Component = () => {
-  return <Button color="primary">Button</Button>;
+  return (
+    <main>
+      <header>Header</header>
+      <AppRouters />
+    </main>
+  );
 };
 
 export default App;

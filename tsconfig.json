@@ -9,6 +9,15 @@
     "jsxImportSource": "solid-js",
     "types": ["vite/client"],
     "noEmit": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "paths": {
+      "src/*": ["./src/*"],
+      "pages": ["./src/pages"],
+      "pages/*": ["./src/pages/*"],
+      "shared": ["./src/shared"],
+      "shared/*": ["./src/shared/*"],
+      "routers": ["./src/routers"],
+      "routers/*": ["./src/routers/*"],
+    }
   }
 }

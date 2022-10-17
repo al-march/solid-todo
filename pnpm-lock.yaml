@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@solidjs/router': ^0.5.0
   '@solsy/ui': ^0.0.12
   '@trivago/prettier-plugin-sort-imports': ^3.2.0
   autoprefixer: ^10.4.8
@@ -14,8 +15,10 @@ specifiers:
   typescript: ^4.8.2
   vite: ^3.0.9
   vite-plugin-solid: ^2.3.0
+  vite-tsconfig-paths: ^3.5.1
 
 dependencies:
+  '@solidjs/router': 0.5.0_solid-js@1.5.1
   '@solsy/ui': 0.0.12_solid-js@1.5.1
   solid-js: 1.5.1
 
@@ -31,6 +34,7 @@ devDependencies:
   typescript: 4.8.2
   vite: 3.0.9
   vite-plugin-solid: 2.3.0_solid-js@1.5.1+vite@3.0.9
+  vite-tsconfig-paths: 3.5.1_vite@3.0.9
 
 packages:
 
@@ -412,6 +416,10 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
+  /@cush/relative/1.0.0:
+    resolution: {integrity: sha512-RpfLEtTlyIxeNPGKcokS+p3BZII/Q3bYxryFRglh5H3A3T8q9fsLYm72VYAMEOOIBLEa8o93kFLiBDUWKrwXZA==}
+    dev: true
+
   /@esbuild/linux-loong64/0.14.54:
     resolution: {integrity: sha512-bZBrLAIX1kpWelV0XemxBZllyRmM6vgFQQG2GdNb+r3Fkp0FOh1NJSvekXDs7jq70k4euu1cryLMfU+mTXlEpw==}
     engines: {node: '>=12'}
@@ -482,6 +490,14 @@ packages:
 
   /@popperjs/core/2.11.6:
     resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
+    dev: false
+
+  /@solidjs/router/0.5.0_solid-js@1.5.1:
+    resolution: {integrity: sha512-rNR07l21tWWDVmCbaapggB89rEX7jlM2XChpTLqEGEnj46LzVZ8zgvjcF6NNKScByAlLpoQUkVIjB2KHpcMi+w==}
+    peerDependencies:
+      solid-js: ^1.5.3
+    dependencies:
+      solid-js: 1.5.1
     dev: false
 
   /@solsy/ui/0.0.12_solid-js@1.5.1:
@@ -1124,6 +1140,10 @@ packages:
       is-glob: 4.0.3
     dev: true
 
+  /glob-regex/0.3.2:
+    resolution: {integrity: sha512-m5blUd3/OqDTWwzBBtWBPrGlAzatRywHameHeekAZyZrskYouOGdNB8T/q6JucucvJXtOuyHIn0/Yia7iDasDw==}
+    dev: true
+
   /glob/7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
     dependencies:
@@ -1152,6 +1172,10 @@ packages:
       ignore: 5.2.0
       merge2: 1.4.1
       slash: 3.0.0
+    dev: true
+
+  /globrex/0.1.2:
+    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
     dev: true
 
   /has-flag/3.0.0:
@@ -1472,6 +1496,15 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /recrawl-sync/2.2.2:
+    resolution: {integrity: sha512-E2sI4F25Fu2nrfV+KsnC7/qfk/spQIYXlonfQoS4rwxeNK5BjxnLPbWiRXHVXPwYBOTWtPX5765kTm/zJiL+LQ==}
+    dependencies:
+      '@cush/relative': 1.0.0
+      glob-regex: 0.3.2
+      slash: 3.0.0
+      tslib: 1.14.1
+    dev: true
+
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
     hasBin: true
@@ -1570,6 +1603,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /strip-bom/3.0.0:
+    resolution: {integrity: sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==}
+    engines: {node: '>=4'}
+    dev: true
+
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
     engines: {node: '>=4'}
@@ -1629,6 +1667,19 @@ packages:
     resolution: {integrity: sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==}
     dev: true
 
+  /tsconfig-paths/4.1.0:
+    resolution: {integrity: sha512-AHx4Euop/dXFC+Vx589alFba8QItjF+8hf8LtmuiCwHyI4rHXQtOOENaM8kvYf5fR0dRChy3wzWIZ9WbB7FWow==}
+    engines: {node: '>=6'}
+    dependencies:
+      json5: 2.2.1
+      minimist: 1.2.6
+      strip-bom: 3.0.0
+    dev: true
+
+  /tslib/1.14.1:
+    resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
+    dev: true
+
   /typescript/4.8.2:
     resolution: {integrity: sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==}
     engines: {node: '>=4.2.0'}
@@ -1673,6 +1724,20 @@ packages:
       merge-anything: 5.0.2
       solid-js: 1.5.1
       solid-refresh: 0.4.1_solid-js@1.5.1
+      vite: 3.0.9
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /vite-tsconfig-paths/3.5.1_vite@3.0.9:
+    resolution: {integrity: sha512-t7cPvDMDxOCUxxNLqngXiX+L6jPYBr+eMgkeVadknxBb89d2s1aejz+wFEep010VfXjGVAUWGEFPe1fkRYTFvg==}
+    peerDependencies:
+      vite: '>2.0.0-0'
+    dependencies:
+      debug: 4.3.4
+      globrex: 0.1.2
+      recrawl-sync: 2.2.2
+      tsconfig-paths: 4.1.0
       vite: 3.0.9
     transitivePeerDependencies:
       - supports-color
