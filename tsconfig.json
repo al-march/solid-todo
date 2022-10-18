@@ -18,6 +18,7 @@
       "shared/*": ["./src/shared/*"],
       "routers": ["./src/routers"],
       "routers/*": ["./src/routers/*"],
+      "template": ["./src/template"],
     }
   }
 }
