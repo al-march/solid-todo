@@ -4,7 +4,7 @@ import {Footer} from 'template';
 
 const App: Component = () => {
   return (
-    <main class="relative h-screen flex flex-col">
+    <main class="relative max-w-2xl mx-auto h-screen flex flex-col">
       <div class="navbar bg-base-200"></div>
       <div class="flex-1 h-full overflow-y-scroll">
         <AppRouters />
