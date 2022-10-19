@@ -92,10 +92,8 @@ const SwitcherNavBase = (props: ParentProps<SwitcherNavProps>) => {
       activeItem = navRef();
     }
 
-    const rect = activeItem.getBoundingClientRect();
-
     setSwitcherPosition({
-      left: rect.left,
+      left: activeItem.scrollWidth * (state.value - 1),
       width: activeItem.scrollWidth,
       height: activeItem.scrollHeight,
     });
